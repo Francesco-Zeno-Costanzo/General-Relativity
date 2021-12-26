@@ -1,2 +1,2 @@
-# ODEs
-Bunch of codes for odes, and something about general relativity
+# GR
+Bunch of codes for general relativity

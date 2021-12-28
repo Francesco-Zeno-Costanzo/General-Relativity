@@ -54,7 +54,7 @@ def RK4(num_steps, x0, t0, tf, f):
     -------
     x : one dimensional array
         solution of the equation
-    y : one dimensional array
+    t : one dimensional array
         time
     '''
     x = np.zeros(num_steps + 1)

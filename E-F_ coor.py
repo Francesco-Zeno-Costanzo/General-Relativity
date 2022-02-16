@@ -67,9 +67,9 @@ def RK4(num_steps, x0, t0, tf, f):
     for i in range(num_steps):
         if x[i] > 0:
             xk1 = f(x[i])
-            xk2 = f(x[i] + ek1*dt/2)
-            xk3 = f(x[i] + ek2*dt/2)
-            xk4 = f(x[i] + ek3*dt)
+            xk2 = f(x[i] + xk1*dt/2)
+            xk3 = f(x[i] + xk2*dt/2)
+            xk4 = f(x[i] + xk3*dt)
             x[i + 1] = x[i] + (dt/6)*(xk1 + 2*xk2 + 2*xk3 + xk4)
         else:
             x[i] = 0

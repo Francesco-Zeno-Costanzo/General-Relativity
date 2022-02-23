@@ -34,7 +34,7 @@ def eq1(r):
     return (-rs + r)/(r + rs)
 
 
-def RK4(num_steps, x0, t0, tf, f):
+def RK4(num_steps, x0, ti, tf, f):
     '''
     Compute solution using runge_kutta4 method.
 
@@ -60,7 +60,7 @@ def RK4(num_steps, x0, t0, tf, f):
     x = np.zeros(num_steps + 1)
     t = np.zeros(num_steps + 1)
 
-    x[0], t[0] = x0, t0
+    x[0], t[0] = x0, ti
 
     dt = abs(tf-ti)/num_steps
 

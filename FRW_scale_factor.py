@@ -89,13 +89,14 @@ print('Per costante cosmologica positiva:')
 t0, a0, age0 = RK4(n, a_0, a_f, 0.3, 0, 0.7)
 t1, a1, age1 = RK4(n, a_0, a_f, 1, 0, 0)
 t2, a2, age2 = RK4(n, a_0, a_f, 0, 0, 1)
-t3, a3, age3 = RK4(n, a_0, a_f, 0, 1, 0)
-t4, a4, age4 = RK4(n, a_0, a_f, 0, 0, 0)
+t3, a3, age3 = RK4(n, a_0, a_f, 0, 0, 0)
+t4, a4, age4 = RK4(n, a_0, a_f, 0, 1, 0)
 
 print('Per costante cosmologica negativa e in assenza di radiazione:')
 tp = np.linspace(0, 30, n)
 t5, a5, age5, t_c = MNL(2, tp)
-print(f"L'età dell'universo è: {age4:.3f} Gyr")
+
+print(f"L'età dell'universo è: {age5:.3f} Gyr")
 print(f"e la fine dell'universo sarà a: {t_c:.3f} Gyr")
 
 plt.title('Evoluzione del fattore di scala')

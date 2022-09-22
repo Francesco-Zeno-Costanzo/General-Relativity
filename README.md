@@ -26,3 +26,5 @@ we can define:
 
 
 "FRW_scale_factor.py" calculates the trend of the scale factor of the FRW metric, and the age of universe, in the case of a universe with different components. In the case of a closed universe, the analytical solution is present because the numerical solution presents problems due to the negative derivative
+
+![](grafichetto.png)
